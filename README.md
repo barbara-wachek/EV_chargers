@@ -15,4 +15,14 @@ odwrotna chronologia pliku
 
 WebSocket ? gniazdo w sieci telekomunikacyjnej?
 
-Documentation OCPP: https://www.oasis-open.org/committees/download.php/58944/ocpp-1.6.pdf
+Documentation Open Charge Point Protocol (OCPP) 1.6: https://www.oasis-open.org/committees/download.php/58944/ocpp-1.6.pdf
+
+
+
+### Specification: 
+1. Tworzenie wykresu poboru mocy (minutowy wykres)
+2. Możliwość uploadowania kilku plików w formacie excelowym
+3. Program analizuje dane ze wszystkich plików i zwraca wykres 
+4. Program oprócz wykresu zwraca też wybrane wartości? Np. data największego poboru mocy?
+5. Może jeszcze jakieś inne wykresy?
+6. Wykres mozna eksportować do formatu pdf
