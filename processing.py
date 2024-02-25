@@ -16,6 +16,14 @@ df_reversed['Zewnętrzny numer ID karty '].unique()
 df_without_clients_ID = df_reversed.drop(['Zewnętrzny numer ID karty ', 'Wewnętrzny numer ID karty ','Numer ID klienta', 'Nazwa'], axis=1)
 
 
+#Jesli Event  == 'Heartbeat OCPP' to mozna wywalic caly wiersz
+
+df_without_Events_Heartbeat = df_without_clients_ID[df_without_clients_ID['Event'] != 'Heartbeat OCPP']
+
+df = df[df.line_race != 0]
+
+
+
 
 # Nazwy kolumn: ['Data faktury', 'Event', 'Informacje uzupełniające', 'Moc (kW)',
 #        'Energia (kWh)', 'Czas trwania transakcji',
